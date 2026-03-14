@@ -222,29 +222,5 @@ font-size:40px;
 }
 
 nav{
-position:absolute;
-top:70px;
-left:0;
-width:100%;
-background:#111;
-
-display:none;
-}
-
-nav ul{
-flex-direction:column;
-text-align:center;
-padding:20px 0;
-}
-
-nav ul li{
-padding:10px 0;
-}
-
-nav.active{
-display:block;
-}
-}
-
-
+  display:none;
 }
