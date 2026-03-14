@@ -1,128 +1,313 @@
-body{
+*{
 margin:0;
-font-family:Poppins;
-color:#333;
+padding:0;
+box-sizing:border-box;
 }
 
-/* NAV */
-nav{
+body{
+
+font-family:'Poppins',sans-serif;
+line-height:1.6;
+
+}
+
+
+/* NAVBAR */
+
+header{
+
 position:fixed;
-width:100%;
 top:0;
+width:100%;
+
 display:flex;
 justify-content:space-between;
-padding:20px 40px;
-background:rgba(0,0,0,0.6);
-color:white;
+align-items:center;
+
+padding:20px 8%;
+
+background:rgba(0,0,0,0.7);
+backdrop-filter:blur(5px);
+
 z-index:1000;
+
+}
+
+.logo{
+
+font-family:'Playfair Display',serif;
+color:white;
+font-size:24px;
+
 }
 
 nav ul{
+
 display:flex;
-gap:30px;
+gap:25px;
 list-style:none;
+
 }
 
 nav a{
+
 color:white;
 text-decoration:none;
+font-weight:400;
+
+transition:0.3s;
+
 }
+
+nav a:hover{
+
+color:#d4af37;
+
+}
+
 
 /* HERO */
+
 .hero{
+
 height:100vh;
-background-image: url("https://www.freepik.es/foto-gratis/interior-restaurante_1243339.htm#fromView=keyword&page=1&position=0&uuid=b490af11-d60c-4d0a-8133-250dbad94d94&query=Restaurante");
-background:url("https://unsplash.com/es/fotos/mesas-y-sillas-vacias-dentro-de-un-restaurante-ZDD7O-grjBo") center/cover no-repeat;
+
+background-image:url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4");
+
+background-size:cover;
+background-position:center;
+
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
+
 text-align:center;
-color: black;
+
+color:white;
+
+padding:0 20px;
+
 }
 
-.hero h1{
-font-family:Playfair Display;
+.hero-content h1{
+
 font-size:60px;
+font-family:'Playfair Display',serif;
+
+margin-bottom:15px;
+
+}
+
+.hero-content p{
+
+font-size:20px;
+margin-bottom:25px;
+
 }
 
 .btn{
-background:#2ecc71;
+
+background:#d4af37;
+
+padding:12px 30px;
+
 color:white;
-padding:12px 28px;
-border-radius:30px;
+
 text-decoration:none;
+
+border-radius:5px;
+
+font-weight:600;
+
+transition:0.3s;
+
 }
 
-/* CONTAINER */
-.container{
-max-width:1100px;
-margin:auto;
-padding:80px 20px;
+.btn:hover{
+
+background:#b9972e;
+
 }
+
 
 /* MENU */
+
+.menu{
+
+padding:100px 8%;
+
+text-align:center;
+
+}
+
+.menu h2{
+
+font-size:40px;
+
+margin-bottom:50px;
+
+font-family:'Playfair Display',serif;
+
+}
+
 .menu-grid{
+
 display:grid;
+
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
 gap:30px;
+
 }
 
-.dish img{
-width:100%;
-border-radius:12px;
-}
+.menu-card{
 
-.dish{
-text-align:center;
-}
+background:white;
 
-/* GALLERY */
-.gallery{
-padding:80px 20px;
-text-align:center;
-}
-
-.gallery-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.gallery img{
-width:100%;
 border-radius:10px;
+
+overflow:hidden;
+
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+transition:0.3s;
+
 }
+
+.menu-card:hover{
+
+transform:translateY(-5px);
+
+}
+
+.menu-card img{
+
+width:100%;
+
+height:200px;
+
+object-fit:cover;
+
+}
+
+.menu-card h3{
+
+padding:10px;
+
+font-size:22px;
+
+}
+
+.menu-card p{
+
+padding:0 10px;
+
+color:#666;
+
+}
+
+.menu-card span{
+
+display:block;
+
+padding:10px;
+
+font-weight:600;
+
+color:#d4af37;
+
+}
+
+
+/* ABOUT */
+
+.about{
+
+padding:100px 10%;
+
+background:#f4f4f4;
+
+text-align:center;
+
+}
+
+.about h2{
+
+font-size:38px;
+
+margin-bottom:20px;
+
+font-family:'Playfair Display',serif;
+
+}
+
+.about p{
+
+max-width:700px;
+
+margin:auto;
+
+}
+
 
 /* CONTACT */
+
 .contact{
-padding:80px 20px;
-background:#f7f7f7;
+
+padding:100px 10%;
+
+text-align:center;
+
 }
 
-.contact-container{
-display:flex;
-gap:40px;
-max-width:1100px;
-margin:auto;
+.contact h2{
+
+font-size:38px;
+
+margin-bottom:20px;
+
+font-family:'Playfair Display',serif;
+
 }
 
-.map iframe{
-width:100%;
-height:300px;
-border:0;
-border-radius:12px;
+
+/* FOOTER */
+
+footer{
+
+background:#111;
+
+color:white;
+
+text-align:center;
+
+padding:25px;
+
 }
 
-/* MOBILE */
+
+/* RESPONSIVE */
+
 @media(max-width:768px){
 
-.contact-container{
+header{
+
 flex-direction:column;
+gap:10px;
+
 }
 
-nav{
+nav ul{
+
 flex-direction:column;
 align-items:center;
+
+}
+
+.hero-content h1{
+
+font-size:40px;
+
 }
 
 }
