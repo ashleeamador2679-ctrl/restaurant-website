@@ -203,7 +203,8 @@ width:35px;
 }
 
 .whatsapp-btn:hover{
-transform:scale(1.1)
+transform:scale(1.1);
+}
 
 /* RESPONSIVE */
 @media(max-width:768px){
