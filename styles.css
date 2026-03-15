@@ -51,7 +51,7 @@ color:#d4af37;
 /* HERO */
 .hero{
 height:100vh;
-background-image:url("https://unsplash.com/es/fotos/una-gran-sala-con-mesas-y-sillas-QusXD31z0G4");
+background-image:url("Imagenes/hero.jpg");
 background-size:cover;
 background-position:center;
 display:flex;
