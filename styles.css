@@ -251,7 +251,12 @@ height:350px;
 border-radius:15px;
 border:none;
 }
-  
+
+  .contact-container{
+flex-direction:column;
+text-align:center;
+}
+
 nav ul{
 display: none;
 }
