@@ -173,6 +173,25 @@ margin-bottom:20px;
 font-family:'Playfair Display',serif;
 }
 
+.contact-container{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:60px;
+margin-top:40px;
+flex-wrap:wrap;
+}
+
+.contact-info{
+font-size:18px;
+line-height:2;
+}
+
+.contact-map iframe{
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
 
 /* FOOTER */
 footer{
