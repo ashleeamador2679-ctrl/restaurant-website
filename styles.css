@@ -53,6 +53,7 @@ color:#d4af37;
 
 /* HERO */
 .hero{
+position:relative;
 height:100vh;
 background-image:url("Imagenes/hero.jpg");
 background-size:cover;
@@ -237,18 +238,12 @@ border: none;
 box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-.hero{
-position:relative;
-width: 100%;
-}
 
 .wave{
 position:absolute;
-bottom:-1px;
+bottom:0;
 left:0;
-width:100vw;
-margin-left:calc(-50vw + 50%);
-overflow:hidden;
+width:100%;
 line-height:0;
 }
 
