@@ -177,7 +177,7 @@ font-family:'Playfair Display',serif;
 .about h2::after{
 content:"";
 display:block;
-width:70px;
+width:110px;
 height:3px;
 background:linear-gradient(90deg,#d4af37,#f1d57a);
 margin:15px auto 0 auto;
