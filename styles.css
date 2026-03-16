@@ -266,25 +266,23 @@ display:block;
 }
 
 /*animacion de las letras en el hero*/
+.hero-content{
+animation:heroFade 1.2s ease forwards;
+}
+
 .hero-content h1{
+animation:fadeUp 1s ease 0.3s forwards;
 opacity:0;
-transform:translateY(30px);
-animation:fadeUp 1s ease forwards;
-animation-delay:0.5s;
 }
 
 .hero-content p{
+animation:fadeUp 1s ease 0.8s forwards;
 opacity:0;
-transform:translateY(30px);
-animation:fadeUp 1s ease forwards;
-animation-delay:1s;
 }
 
 .hero-content .btn{
+animation:fadeUp 1s ease 1.3s forwards;
 opacity:0;
-transform:translateY(30px);
-animation:fadeUp 1s ease forwards;
-animation-delay:1.5s;
 }
 
 @keyframes fadeUp{
