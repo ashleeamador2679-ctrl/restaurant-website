@@ -7,8 +7,7 @@ box-sizing:border-box;
 body{
 font-family:'Poppins',sans-serif;
 line-height:1.6;
-opacity:0;
-animation:fadePage 1.2s ease forwards;
+animation:fadePage 1s ease;
 }
 
 /*fade-in*/
@@ -285,7 +284,7 @@ animation-delay:1s;
 opacity:0;
 transform:translateY(30px);
 animation:fadeUp 1s ease forwards;
-animation-delay:1.4s;
+animation-delay:1.5s;
 }
 
 @keyframes fadeUp{
@@ -293,7 +292,6 @@ from{
 opacity:0;
 transform:translateY(30px);
 }
-
 to{
 opacity:1;
 transform:translateY(0);
