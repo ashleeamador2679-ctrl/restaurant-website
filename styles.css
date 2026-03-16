@@ -9,6 +9,9 @@ font-family:'Poppins',sans-serif;
 line-height:1.6;
 }
 
+html{
+scroll-behaviour: smooth;
+}
 
 /* NAVBAR */
 header{
