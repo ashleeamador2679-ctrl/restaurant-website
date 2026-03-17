@@ -95,17 +95,21 @@ margin-bottom:25px;
 }
 
 .btn{
-background:#d4af37;
-padding:12px 30px;
-color:white;
+display:inline-block;
+margin-top:20px;
+padding:14px 30px;
+background:linear-gradient(90deg,#d4af37,#f1d57a);
+color:black;
 text-decoration:none;
 border-radius:50px;
 font-weight:600;
+letter-spacing:1px;
 transition:0.3s;
 }
 
 .btn:hover{
-background:#b9972e;
+transform:translateY(-3px);
+box-shadow:0 5px 20px rgba(212,175,55,0.4);
 }
 
 
