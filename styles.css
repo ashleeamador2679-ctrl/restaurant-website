@@ -205,8 +205,8 @@ color:#444;
 
 /* IMAGENES */
 
-.about-img-left,
-.about-img-right{
+.img-left,
+.img-right{
 width:100%;
 max-width:250px;
 border-radius:15px;
@@ -216,20 +216,20 @@ transition:0.4s;
 
 /* estilo inclinado elegante */
 
-.about-img-left{
+.img-left{
 transform:rotate(-6deg);
 justify-self:end;
 }
 
-.about-img-right{
+.img-right{
 transform:rotate(6deg);
 justify-self:start;
 }
 
 /* hover premium */
 
-.about-img-left:hover,
-.about-img-right:hover{
+.img-left:hover,
+.img-right:hover{
 transform:rotate(0deg) scale(1.05);
 }
 
