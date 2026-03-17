@@ -367,15 +367,20 @@ width: 100%;
 width:100%;
 height:250px;
 }
-  
-.about-img{
-display:none;
-}
-.about-container{
-flex-direction:column;
+
+  .about-grid{
+grid-template-columns:1fr;
 text-align:center;
 }
 
+.img-left,
+.img-right{
+justify-self:center;
+transform:none;
+margin-bottom:20px;
+}
+
+}
 .contact-container{
 flex-direction:column;
 text-align:center;
