@@ -164,31 +164,38 @@ color:#d4af37;
 padding:120px 8%;
 background:#f4f4f4;
 text-align:center;
-position:relative;
-overflow:visible;
 }
 
 .about h2{
 font-size:40px;
 margin-bottom:40px;
 font-family:'Playfair Display',serif;
+position:relative;
+display:inline-block;
 }
 
 .about h2::after{
 content:"";
 display:block;
-width:110px;
+width:70px;
 height:3px;
 background:linear-gradient(90deg,#d4af37,#f1d57a);
-margin:15px auto 0 auto;
+margin:15px auto 0;
 border-radius:2px;
 }
 
-.about-wrapper{
-position:relative;
-max-width:900px;
+/* GRID ESTABLE */
+
+.about-grid{
+display:grid;
+grid-template-columns: 1fr 1.5fr 1fr;
+align-items:center;
+gap:40px;
+max-width:1100px;
 margin:auto;
 }
+
+/* TEXTO */
 
 .about-text{
 font-size:18px;
@@ -197,33 +204,34 @@ color:#444;
 }
 
 /* IMAGENES */
-.about-img{
-position:absolute;
-width:220px;
+
+.img-left,
+.img-right{
+width:100%;
+max-width:250px;
 border-radius:15px;
-box-shadow:0 10px 30px rgba(0,0,0,0.25);
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
 transition:0.4s;
 }
 
-/* izquierda */
-.about-img.left{
-left:-180px;
-top:20px;
-transform:rotate(-8deg);
+/* estilo inclinado elegante */
+
+.img-left{
+transform:rotate(-6deg);
+justify-self:end;
 }
 
-/*derecha*/
-.about-img.right{
-right:-180px;
-bottom:20px;
-transform:rotate(8deg);
+.img-right{
+transform:rotate(6deg);
+justify-self:start;
 }
 
-/* efecto elegante */
-.about-img:hover{
+/* hover premium */
+
+.img-left:hover,
+.img-right:hover{
 transform:rotate(0deg) scale(1.05);
 }
-
 
 /* CONTACT */
 .contact{
