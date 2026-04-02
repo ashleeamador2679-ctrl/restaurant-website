@@ -138,6 +138,16 @@ a unique dining experience for every guest.
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 </a>
 
+<script>
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
+  });
+});
 
+document.querySelectorAll(".fade-up").forEach(el=>observer.observe(el));
+</script>
 </body>
 </html>
