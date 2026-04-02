@@ -165,7 +165,17 @@ padding:10px;
 font-weight:600;
 color:#d4af37;
 }
+.menu-grid:hover .menu-card{
+opacity:0.5;
+filter:blur(1px);
+}
 
+.menu-card:hover{
+opacity:1 !important;
+filter:none;
+transform:translateY(-8px) scale(1.03);
+z-index:2;
+}
 
 /* ABOUT */
 .about{
@@ -386,6 +396,16 @@ to{
 opacity:1;
 transform:translateY(0);
 }
+}
+.fade-up{
+opacity:0;
+transform:translateY(40px);
+transition: all 1s ease;
+}
+
+.fade-up.show{
+opacity:1;
+transform:translateY(0);
 }
 
 /* FOOTER */
