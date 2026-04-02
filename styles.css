@@ -1,14 +1,28 @@
 *{
 margin:0;
 padding:0;
-box-sizing:border-box
-transition: all 0.4s ease;
+box-sizing:border-box;
 }
 
 body{
 font-family:'Poppins',sans-serif;
+line-height:1.6;
 background:#0d0d0d;
 color:white;
+animation:fadePage 1s ease;
+}
+
+h1,h2,h3{
+font-family:'Cormorant Garamond', serif;
+}
+
+@keyframes fadePage{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 /* NAVBAR */
@@ -20,9 +34,10 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:20px 8%;
-background:rgba(15,15,15,0.6);
-backdrop-filter:blur(12px);
+background:rgba(0,0,0,0.7);
+backdrop-filter:blur(10px);
 z-index:1000;
+transition:0.3s;
 }
 
 header.scrolled{
@@ -32,7 +47,13 @@ box-shadow:0 5px 20px rgba(0,0,0,0.5);
 
 .logo{
 font-family:'Playfair Display',serif;
+color:white;
 font-size:24px;
+transition:0.3s;
+}
+
+.logo:hover{
+color:#d4af37;
 }
 
 nav ul{
@@ -44,6 +65,7 @@ list-style:none;
 nav a{
 color:white;
 text-decoration:none;
+transition:0.3s;
 }
 
 nav a:hover{
@@ -52,8 +74,12 @@ color:#d4af37;
 
 /* HERO */
 .hero{
+position:relative;
 height:100vh;
-background:url("Imagenes/hero.jpg") center/cover fixed;
+background-image:linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("Imagenes/hero.jpg");
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -62,17 +88,21 @@ text-align:center;
 
 .hero-content h1{
 font-size:60px;
-font-family:'Playfair Display';
+margin-bottom:15px;
+}
+
+.hero-content p{
+font-size:20px;
+margin-bottom:25px;
 }
 
 .btn{
+display:inline-block;
 padding:14px 30px;
 background:linear-gradient(90deg,#d4af37,#f1d57a);
-border-radius:50px;
 color:black;
-text-decoration:none;
-margin-top:20px;
-display:inline-block;
+border-radius:50px;
+font-weight:600;
 position:relative;
 overflow:hidden;
 }
@@ -102,8 +132,8 @@ color:#d4af37;
 /* MENU */
 .menu{
 padding:100px 8%;
-background:#111;
 text-align:center;
+background:#111;
 }
 
 .menu-grid{
@@ -117,6 +147,7 @@ background:#1a1a1a;
 border-radius:10px;
 overflow:hidden;
 box-shadow:0 10px 40px rgba(0,0,0,0.08);
+transition:0.3s;
 }
 
 .menu-card img{
@@ -167,18 +198,17 @@ padding:140px 8%;
 background:#0d0d0d;
 }
 
-/* GLASS */
 .glass{
 background:rgba(255,255,255,0.05);
 backdrop-filter:blur(10px);
 border-radius:20px;
-padding:40px;
 }
 
-/* SCROLL ANIMATION */
+/* ANIMACIONES */
 .fade-up{
 opacity:0;
 transform:translateY(60px);
+transition:1s;
 }
 
 .fade-up.show{
@@ -204,7 +234,7 @@ align-items:center;
 width:35px;
 }
 
-/* SCROLL BAR */
+/* SCROLL */
 body::-webkit-scrollbar{
 width:8px;
 }
@@ -212,7 +242,7 @@ body::-webkit-scrollbar-thumb{
 background:#d4af37;
 }
 
-/* TEXT SELECTION */
+/* SELECTION */
 ::selection{
 background:#d4af37;
 color:black;
