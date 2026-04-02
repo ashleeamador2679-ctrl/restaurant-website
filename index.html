@@ -43,7 +43,7 @@ d="M0,224L60,213.3C120,203,240,181,360,170.7C480,160,600,160,720,181.3C840,203,9
 </div>
 </section>
 
-<section class="menu fade-up">
+
 <section class="menu" id="menu">
 <h2>Our Specialties</h2>
 <div class="menu-grid">
@@ -73,7 +73,7 @@ d="M0,224L60,213.3C120,203,240,181,360,170.7C480,160,600,160,720,181.3C840,203,9
 </div>
 </section>
 
-<section class="about fade-up">
+
 <section class="about" id="about">
 <h2>About Us</h2>
 <div class="about-grid">
@@ -92,7 +92,7 @@ a unique dining experience for every guest.
 </div>
 </section>
 
-<section class="contact fade-up">
+
 <section class="contact" id="contact">
 <h2>Contact</h2>
 <div class="contact-box">
@@ -138,16 +138,6 @@ a unique dining experience for every guest.
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 </a>
 
-<script>
-const observer = new IntersectionObserver(entries=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      entry.target.classList.add("show");
-    }
-  });
-});
 
-document.querySelectorAll(".fade-up").forEach(el=>observer.observe(el));
-</script>
 </body>
 </html>
