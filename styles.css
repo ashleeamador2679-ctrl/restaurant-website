@@ -117,6 +117,8 @@ box-shadow:0 5px 20px rgba(212,175,55,0.4);
 .menu{
 padding:100px 8%;
 text-align:center;
+background:#0d0d0d;
+color:white;
 }
 
 .menu h2{
