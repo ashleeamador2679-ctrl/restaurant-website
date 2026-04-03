@@ -254,6 +254,109 @@ justify-self:start;
 transform:rotate(0deg) scale(1.05);
 }
 
+/* ========================= */
+/*REVIEWS*/
+
+.reviews{
+padding:120px 8%;
+background:#0d0d0d;
+text-align:center;
+color:white;
+overflow:hidden;
+}
+
+.reviews h2{
+font-size:38px;
+margin-bottom:60px;
+font-family:'Playfair Display', serif;
+letter-spacing:3px;
+}
+
+/* SLIDER */
+
+.reviews-slider{
+display:flex;
+gap:30px;
+animation:scrollReviews 20s linear infinite;
+width:max-content;
+}
+
+/* TARJETAS */
+
+.review-card{
+min-width:300px;
+max-width:300px;
+background:rgba(255,255,255,0.05);
+border-radius:20px;
+padding:30px;
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,0.1);
+box-shadow:0 10px 40px rgba(0,0,0,0.4);
+transition:0.4s;
+}
+
+.review-card:hover{
+transform:translateY(-10px);
+}
+
+/* TEXTO */
+
+.review-card p{
+font-size:15px;
+color:#ccc;
+margin-bottom:20px;
+font-style:italic;
+}
+
+/* USER */
+
+.review-user{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.review-user img{
+width:50px;
+height:50px;
+border-radius:50%;
+border:2px solid #d4af37;
+}
+
+.review-user h4{
+margin:0;
+font-size:14px;
+}
+
+/* ⭐ ESTRELLAS ANIMADAS */
+
+.stars{
+color:#d4af37;
+letter-spacing:3px;
+animation:starGlow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes starGlow{
+from{
+opacity:0.6;
+transform:scale(1);
+}
+to{
+opacity:1;
+transform:scale(1.1);
+}
+}
+
+/* 🎞 MOVIMIENTO AUTOMÁTICO */
+
+@keyframes scrollReviews{
+0%{
+transform:translateX(0);
+}
+100%{
+transform:translateX(-50%);
+}
+}
 /* CONTACT */
 .contact{
 padding:140px 8%;
